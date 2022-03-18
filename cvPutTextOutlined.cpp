@@ -18,7 +18,8 @@ void cvPutTextOutlined(
     int fontFace, double fontScale,
     cv::Scalar colorInner, cv::Scalar colorOuter,
     int thicknessInner, int additionalThicknessOuter,
-    int lineType, bool bottomLeftOrigin)
+    int lineType, bool bottomLeftOrigin
+)
 {
     const int thicknessOuter = thicknessInner + additionalThicknessOuter;
     cv::putText(img, text, org, fontFace, fontScale, colorOuter, thicknessOuter, lineType, bottomLeftOrigin);
